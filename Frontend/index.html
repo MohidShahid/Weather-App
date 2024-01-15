@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Weather app</title>
+</head>
+
+<body>
+    <div id="main">
+        <div class="currentWeather">
+            <!-- <div class="greeting-box"></div> -->
+            <h1 class="greeting">Good Morning!</h1>
+            <p id="time-date">Saturday, 13 Jan 2024 | 11:54PM
+            </p>
+
+            <div class="basic-info">
+                <div class="search-tab">
+                    <input type="text" placeholder="Enter the city name" autofocus id="search-bar">
+                    <svg id="search-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </div>
+                <div class="content">
+                    <div class="area-details">
+                        <h3 class="location">Lahore</h3>
+                        <img id="weather-img" src="./Images/sunny.png" width="160px" height="150px" alt="">
+                        <h2 class="temp">37.5 &#8451</h2>
+                        <span class="condition">Mostly Cloudy</span>
+                    </div>
+                    <div class="info">
+                        <p class="leftIcons"><img src="./Images/humidity-svgrepo-com.svg" class="icons"
+                                alt="jpg">Humidity: 90</p>
+                        <p class="leftIcons"><img src="./Images/wind-svgrepo-com.svg" class="icons" alt=""> Wind: 90</p>
+                        <p class="leftIcons"><img src="./Images/temperature-low-svgrepo-com.svg" class="icons"
+                                alt="">Felt like: 90</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hourly-details">
+                <div class="time-slot active">
+                    <p class="time-p">6AM</p>
+                    <h3 class="time-h">20 &#8451</h3>
+                    <span>Mist</span>
+                </div>
+                <div class="time-slot">
+                    <p class="time-p">9AM</p>
+                    <h3 class="time-h">20 &#8451</h3>
+                    <span>Mist</span>
+                </div>
+                <div class="time-slot">
+                    <p class="time-p">12PM</p>
+                    <h3 class="time-h">20 &#8451</h3>
+                    <span>Mist</span>
+                </div>
+                <div class="time-slot">
+                    <p class="time-p">3PM</p>
+                    <h3 class="time-h">20 &#8451</h3>
+                    <span>Mist</span>
+                </div>
+                <div class="time-slot">
+                    <p class="time-p">6PM</p>
+                    <h3 class="time-h">20 &#8451</h3>
+                    <span>Mist</span>
+                </div>
+            </div>
+        </div>
+        <div class="forecast">
+
+            <!-- <div class="temperature"><span class="big-temp">20 &#8451</span> <span>Feels like 19 &deg</span></div> -->
+            <div class="other-details"><span><img src="./Images/sun.png" class="imgcast" width="25px" height="25px"
+                        alt="">Rise 5:45AM | </span> <span><img src="./Images/time.png" class="imgcast" width="25px"
+                        height="25px" alt="">Set 7:00PM</span></div>
+            <div class="next-forecast">
+                <div class="day1"><span  class="prediction">Mon</span>
+                <span class="temp-pre">27 &deg</span><span class="condition-pre">Sunny</span></div>
+                <div class="day2"><span class="prediction">Tue</span>
+                <span class="temp-pre">27 &deg</span><span class="condition-pre">Cloudy</span></div>
+                <div class="day3"><span class="prediction">Wed</span>
+                <span class="temp-pre">27 &deg</span><span class="condition-pre">Mist</span></div>
+            </div>
+        </div>
+    </div>
+<script src="index.js"></script>
+</body>
+
+
+</html>
