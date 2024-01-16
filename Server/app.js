@@ -12,7 +12,9 @@ app.use(cors({
 }));
 
 
-
+app.get('/', (req, res)=>{
+  res.send('<h1>Hello World! Thanks for coming here...</h1>')
+})
 
 app.get(`/weather`, async (req,res)=>{
    try{
