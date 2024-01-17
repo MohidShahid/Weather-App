@@ -5,7 +5,7 @@ const cors = require('cors');
 
 
 app.use(cors({
-  origin: 'http://192.168.0.106:3000',
+  origin: 'https://weather-domain.netlify.app',
   methods: 'GET,POST,OPTIONS',
   allowedHeaders: ['Content-Type', 'Authorization', 'Accept'],
   credentials: true,
